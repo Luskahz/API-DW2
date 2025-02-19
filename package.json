@@ -1,0 +1,17 @@
+{
+  "name": "teste-node",
+  "version": "1.0.0",
+  "description": "projeto node pirocada",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
+
