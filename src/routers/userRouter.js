@@ -1,27 +1,12 @@
 import express from 'express'
+import getUserController from '../controllers/user/getUserController.js'
+import createUserController from '../controllers/user/createUserController.js'
 const router = express.Router()
 
-router.get('/', (req, res) => {
-    res.json({
-      name: "Lucas Alves",
-      Email: "LucasAlves@gmail.com",
-      Avatar: "http://github.com/Luskahz.png"
-    })
-  })
-  
-router.post('/', (req, res) => {
-  res.json({
-    mensage: "Usuario Cadastrado com sucesso!",
-    user: {
-      name: "Lucas Alves",
-      Email: "LucasAlves@gmail.com",
-      Avatar: "http://github.com/Luskahz.png"
-    }
-      
-  })
-})
+router.get('/:id/:nome', getUserController)
+router.post('/', createUserController)
 
-  export default router
+export default router
   
   
   
