@@ -5,6 +5,6 @@ const property = req.body
 
     return res.json({
         mensage: "Imovel cadastrado com sucesso",
-        property: property
+        property: (property, parseInt(id))
     })
 }

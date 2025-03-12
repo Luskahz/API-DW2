@@ -5,7 +5,7 @@ export default function deletePropertyController(req, res){
     
     return res.json({
         mensage: `Imovel ${id} deletado com sucesso`,
-        property: id
+        property: parseInt(id)
         
     })
 }

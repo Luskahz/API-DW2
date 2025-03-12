@@ -1,7 +1,7 @@
 export default function getPropertyController(req, res){
-    const id = req.body
+    const id = req.params
     return res.json({
-        property: id
+        property: parseInt(id)
         
     })
 }

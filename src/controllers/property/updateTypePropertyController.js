@@ -1,10 +1,11 @@
 export default function updateTypePropertyController(req, res){
+    const property =req.body
+    const id = req.params
+    
+    
     return res.json({
         mensage: "Imovel parcialmente atualizado com sucesso",
-        property: {
-        id: 1,
-        tipo: "Aluguel",
-        }
+        property: (property, parseInt(id))
         
     })
 }
