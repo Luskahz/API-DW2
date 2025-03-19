@@ -1,6 +1,6 @@
 import express from 'express'
 import getPropertyController from '../controllers/property/getPropertyController.js'
-import createPropertyController from '../controllers/property/createPropertyController.js'
+import { createPropertyController } from '../controllers/property/createPropertyController.js'
 import updatePropertyController from '../controllers/property/updatePropertyController.js'
 import deletePropertyController from '../controllers/property/deletePropertyControler.js'
 import updateTypePropertyController from '../controllers/property/updateTypePropertyController.js'
