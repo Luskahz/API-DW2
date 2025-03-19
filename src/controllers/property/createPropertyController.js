@@ -1,10 +1,14 @@
-export default function(req, res){
-const property = req.body
+import { create } from "../../models/propertymodel"
 
-//TUDO validar e inserir no BD
+export async function createPropertyController(req, res){
+const property = req.body
+//TUDO validar 
+const result = await create(property)
+
+
 
     return res.json({
         mensage: "Imovel cadastrado com sucesso",
-        property: (property, parseInt(id))
+        property: result
     })
 }
