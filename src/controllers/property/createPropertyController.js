@@ -1,9 +1,9 @@
-import { create } from "../../models/propertymodel"
+import { createProperty } from "../../models/propertyModel"
 
 export async function createPropertyController(req, res){
 const property = req.body
 //TUDO validar 
-const result = await create(property)
+const result = await createProperty(property)
 
 
 
