@@ -6,11 +6,12 @@ import deletePropertyController from '../controllers/property/deletePropertyCont
 import updateTypePropertyController from '../controllers/property/updateTypePropertyController.js'
 const router = express.Router()
 
-router.get('/:id', getPropertyController)
+router.get('/list', getPropertyController)
+router.get('/:id'), ()=>{} //get de um unico property
 router.post('/', createPropertyController)
 router.put('/:id', updatePropertyController)
 router.delete('/:id', deletePropertyController)
-router.patch('/:id', updateTypePropertyController)
+router.patch('/type', updateTypePropertyController)
 
   export default router
   

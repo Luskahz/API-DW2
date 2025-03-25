@@ -1,7 +1,7 @@
-export default function getPropertyController(req, res){
-    const id = req.params
-    return res.json({
-        property: parseInt(id)
-        
-    })
+import { getList } from "../../models/propertyModel.js"
+
+export default async function getPropertyController(req, res){
+    const result = await getList()
+
+    return res.json(result)
 }
