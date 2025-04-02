@@ -1,13 +1,13 @@
-import { createProperty } from "../../models/propertyModel.js"
+import { create } from "../../models/propertyModel.js"
 
-export async function createPropertyController(req, res){
+export default async function createPropertyController(req, res) {
     const property = req.body
 
-    //TUDO validar 
-    const result = await createProperty(property)
+    //TODO validar
+    const result = await create(property)
 
     return res.json({
-        mensage: "Imovel cadastrado com sucesso",
+        message: "Imóvel criado com sucesso!",
         property: result
     })
 }
