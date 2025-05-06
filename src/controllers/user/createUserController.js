@@ -1,11 +1,10 @@
-export default function createUserController(req, res){
+export default function createUserController(req, res) {
     return res.json({
-        mensage: "Usuario Cadastrado com sucesso!",
+        message: "Usário criado com sucesso!",
         user: {
-            name: "Lucas Alves",
-            Email: "LucasAlves@gmail.com",
-            Avatar: "http://github.com/Luskahz.png"
+            name: "João",
+            email: "joao@gmail.com",
+            avatar: "http://github.com/joao.png"
         }
-            
     })
 }
